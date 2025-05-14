@@ -1,0 +1,7 @@
+{
+  "watch": [
+    "."
+  ],
+  "ext": "php,html,css,js",
+  "exec": "powershell -Command \"& { Get-Process -Id (Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue).OwningProcess -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue } ; php -S localhost:8000 -t public\""
+}
