@@ -41,7 +41,7 @@ $app = AppFactory::create();
 $app->addBodyParsingMiddleware();
 $app->add(new CorsMiddleware());
 
-$app->post('/newsletter', function (Request $request, Response $response) {
+$app->post('/', function (Request $request, Response $response) {
     $data = $request->getParsedBody();
 
     $validator = Validator::key('email', Validator::allOf(
