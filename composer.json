@@ -1,0 +1,15 @@
+{
+    "name": "bitcriativo/api-newsletter-bitcriativo.com.br",
+    "autoload": {
+        "psr-4": {
+            "Bitcriativo\\ApiNewsletterBitcriativoComBr\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eduardo Pacheco",
+            "email": "epacheco.dev@gmail.com"
+        }
+    ],
+    "require": {}
+}
